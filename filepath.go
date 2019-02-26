@@ -14,8 +14,9 @@ func main() {
 			err := os.Remove("E:\\" + f.Name())
 			if err != nil {
 				fmt.Println(err)
+			} else {
+				fmt.Println(f.Name(), " removed")
 			}
-			fmt.Println(f.Name(), " removed")
 		}
 	}
 }
